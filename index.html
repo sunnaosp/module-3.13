@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Ívar málari</title>
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3">
+        <div class="container">
+            <a onclick="navigateToHomaPage()" class="navbar-brand">
+                <img src="assets/ivarmalar.svg" alt="logo" width="130px" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a onclick="navigateToContact()" class=nav-link>Hafa samband</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home-page">
+        <!-- showcase -->
+        <section class="bg-light text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between align-items-center">
+                    <div>
+                        <h1>TRAUSTUR & GÓÐUR <span class="text-warning">MÁLARI</span></h1>
+                        <p class="lead">Ég legg mikla áherslu á að vera traustur, veita faglega og góða þjónustu.<br>
+                            Ég gæti ávallt hreinlætis hvert sem ég kem og passa uppá það að viðskiptavinurinn sé ánægður
+                            með
+                            útkomuna.</p>
+                        <button class="btn btn-warning btn-lg">Nánar</button>
+                    </div>
+                    <div>
+                        <img class="img-fluid w-80 d-none d-sm-block" src="assets/undraw_at_home_octe.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- boxes -->
+        <section class="p-5">
+            <div class="container">
+                <div class="row text-center g-4">
+                    <div class="col-md">
+                        <div class="card text-dark border-0">
+                            <div class="card-body text-center"></div>
+                            <div class="h1 mb-3">
+                                <i class="bi bi-palette2  circle-icon"></i>
+                            </div> <br>
+                            <h3 class="card-title mb-3">
+                                Litapalettur
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat
+                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <a href="#" class="btn btn-warning">Nánar</a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card text-dark border-0">
+                            <div class="card-body text-center"></div>
+                            <div class="h1 mb-3">
+                                <i class="bi bi-brush  circle-icon"></i>
+                            </div> <br>
+                            <h3 class="card-title mb-3">
+                                Penslar
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat
+                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <a href="#" class="btn btn-warning">Nánar</a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card text-dark border-0">
+                            <div class="card-body text-center"></div>
+                            <div class="h1 mb-3">
+                                <i class="bi bi-paint-bucket  circle-icon"></i>
+                            </div> <br>
+                            <h3 class="card-title mb-3">
+                                Máling
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat
+                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <a href="#" class="btn btn-warning">Nánar</a>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- About me sections -->
+
+        <section id="about" class="p-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md">
+                        <img src="assets/undraw_color_palette_yamk.svg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="col-md p-5">
+                        <h2>Um mig</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, doloremque. Rerum assumenda
+                            esse
+                            est earum, at excepturi blanditiis minus, doloremque commodi accusantium numquam nesciunt
+                            harum
+                            tempore perspiciatis, officia vel sunt?
+                        </p>
+                        <a href="#" class="btn btn-light mt-3">
+                            <i class="bi bi-chevron-right"></i> Nánar
+                        </a>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <div id="contact-page">
+
+        <!-- showcase -->
+
+        <section class="bg-light text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between align-items-center">
+                    <div>
+                        <h1>HAFA<span class="text-warning">SAMBAND</span></h1>
+                        <p class="lead">Fáðu tilboð í verkið & ég hef samband!</p>
+                    </div>
+                    <div>
+                        <img class="img-fluid w-80 d-none d-sm-block" src="assets/undraw_work_in_progress_uhmv.svg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Section: Contact-->
+        <section class=" bg-light text-dark p-5">
+            <div class="container">
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-9 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" method="POST">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">Nafn</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">Netfang</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="Fyrirsögn">Fyrirsögn</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2"
+                                            class="form-control md-textarea"></textarea>
+                                        <label for="message">Skilaboð</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-warning" onclick="submitContactForm()">Senda</a>
+                        </div>
+                        <div id="contact-form-status" class="status"></div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-3 text-center">
+                        <ul class="list-unstyled mb-0">
+                            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                <img src="assets/image1.jfif" class="img-fluid" alt="Responsive image" />
+                                <!--Grid column-->
+
+                    </div>
+                </div>
+
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Traustur og góður málari:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Ívar málari ehf
+                        </h6>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, doloremque. Rerum assumenda
+                            esse est earum, at excepturi blanditiis minus.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Samstarfsaðilar
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Húsasmiðjan</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Bauhaus</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Litapalettur
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Litakort A</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Litakort B</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Hafa samband
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Reykjavík</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            ivar@malar.is
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Ívar málari | Vsknúmer:
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

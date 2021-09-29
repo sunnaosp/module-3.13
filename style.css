@@ -1,0 +1,13 @@
+html,
+body {
+  height: 100%;
+}
+.circle-icon {
+  background: #ffc107;
+  padding: 30px;
+  border-radius: 50%;
+}
+
+a {
+  cursor: pointer;
+}
