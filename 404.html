@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body></body>
+  <script>
+    const pathSplit = window.location.pathname.split("/");
+    window.location.href = '/?=' + pathSplit[pathSplit.length-1];
+  </script>
+</html>
