@@ -4,7 +4,7 @@ function navigateToHomaPage() {
 }
 
 function navigateToContact() {
-  history.pushState(null, null, "contact");
+  history.pushState(null, null, "#contact");
   setContactVisible();
 }
 
@@ -49,7 +49,12 @@ function submitContactForm() {
 }
 
 function Init() {
-  if (window.location.pathname == "/contact") setContactVisible();
+  const hrefSplit = window.location.href.split("/");
+  if (
+    window.location.pathname == "/contact" ||
+    hrefSplit[hrefSplit.length - 1] == "#contact"
+  )
+    setContactVisible();
   else setHomeVisible();
 
   setContactName();
