@@ -5,6 +5,7 @@
   </head>
   <body></body>
   <script>
-    window.location.href = '/?' + window.location.pathname;
+    const pathSplit = window.location.pathname.split("/");
+    window.location.href = '/?=' + pathSplit[pathSplit.length-1];
   </script>
 </html>
